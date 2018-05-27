@@ -21,6 +21,7 @@ class CpuDumper(private val pid: String) {
     private val procPidTaskStatSampler = ProcPidTaskStatSampler(pid)
     private val javaStacksSampler = JavaStacksSampler()
     private val kill3Cmd = Kill3Cmd(pid)
+    private val debuggerdCmd = DebuggerdCmd(pid)
     private var topCmd: TopCmd? = null
 
     fun dumpToString(): String {
@@ -64,7 +65,7 @@ class CpuDumper(private val pid: String) {
     }
 
     fun dumpNativeStack(){
-
+        debuggerdCmd.dump()
     }
 
     data class CpuInfo(val cpuTime: Long, val log: String)
