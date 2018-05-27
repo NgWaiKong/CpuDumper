@@ -1,11 +1,11 @@
-#CpuDumper
+# CpuDumper
 CpuDumper is a tool for third-party applications to analyze CPU usage
 
-##Feature
+## Feature
 - Get the CPU Usage of the  process, thread
 - Get the Thread Stack of Java and Native (Native requires Root permission)
 
-##Usage
+## Usage
 1. CpuDump 
 
 
