@@ -33,3 +33,6 @@ CpuDumper is a tool for third-party applications to analyze CPU usage
         cpuDumper.dumpNativeStack();//debuggerd pid cmd(need root)
 
 
+## TODO
+1. DUMPSYS CPUINFO
+2. proc/cpuinfo
